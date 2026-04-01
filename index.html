@@ -10,9 +10,6 @@
 </head>
 <body>
 
-<!-- Risk Warning Banner -->
-<div class="risk-banner"><strong>Risk Warning:</strong> CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 74.6% of retail investor accounts lose money when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</div>
-
 <!-- ===== HEADER / NAVIGATION ===== -->
 <header class="header">
   <div class="container">
@@ -46,6 +43,107 @@
 
 <!-- ===== HERO SECTION ===== -->
 <section class="hero">
+  <!-- Background: Dubai Skyline + Trading Chart -->
+  <div class="hero__bg">
+    <svg viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#C9A84C" stop-opacity=".12"/>
+          <stop offset="100%" stop-color="#C9A84C" stop-opacity=".02"/>
+        </linearGradient>
+        <linearGradient id="glowGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+          <stop offset="0%" stop-color="#C9A84C" stop-opacity=".25"/>
+          <stop offset="50%" stop-color="#C9A84C" stop-opacity=".06"/>
+          <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="chartArea" x1="0" y1="200" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#C9A84C" stop-opacity=".25"/>
+          <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Ambient glow behind skyline -->
+      <ellipse cx="820" cy="650" rx="700" ry="250" fill="url(#glowGrad)"/>
+
+      <!-- Skyline silhouette -->
+      <path d="M0 700 L0 520 L80 520 L80 460 L120 460 L120 400 L140 400 L140 360 L160 340 L180 340 L180 380 L220 380 L220 320 L240 320 L240 280 L260 260 L280 260 L280 300 L320 300 L320 240 L340 240 L340 200 L360 180 L380 180 L380 220 L400 220 L400 260 L440 260 L440 200 L460 160 L480 160 L480 120 L500 100 L520 100 L520 140 L540 140 L540 180 L580 180 L580 140 L600 120 L620 100 L640 100 L640 70 L660 50 L680 50 L680 70 L700 70 L700 50 L720 30 L740 30 L740 50 L760 50 L760 80 L780 80 L780 50 L800 30 L820 30 L820 60 L840 60 L840 90 L860 90 L860 60 L880 60 L880 100 L900 100 L900 130 L920 130 L920 100 L940 100 L940 140 L960 140 L960 170 L1000 170 L1000 200 L1040 200 L1040 240 L1080 240 L1080 220 L1100 220 L1100 260 L1140 260 L1140 300 L1180 300 L1180 340 L1220 340 L1220 360 L1280 360 L1280 400 L1340 400 L1340 440 L1400 440 L1440 460 L1440 700 Z"
+        fill="url(#skyGrad)" stroke="rgba(201,168,76,.15)" stroke-width=".5"/>
+
+      <!-- Building vertical lines -->
+      <g stroke="#C9A84C" stroke-width=".5" opacity=".08">
+        <line x1="660" y1="50" x2="660" y2="700"/><line x1="680" y1="50" x2="680" y2="700"/>
+        <line x1="720" y1="30" x2="720" y2="700"/><line x1="740" y1="30" x2="740" y2="700"/>
+        <line x1="800" y1="30" x2="800" y2="700"/><line x1="820" y1="30" x2="820" y2="700"/>
+        <line x1="500" y1="100" x2="500" y2="700"/><line x1="520" y1="100" x2="520" y2="700"/>
+        <line x1="620" y1="100" x2="620" y2="700"/><line x1="460" y1="160" x2="460" y2="700"/>
+      </g>
+
+      <!-- Window lights -->
+      <g fill="#C9A84C">
+        <rect x="664" y="80" width="4" height="5" rx="1" opacity=".2"/>
+        <rect x="664" y="100" width="4" height="5" rx="1" opacity=".15"/>
+        <rect x="664" y="120" width="4" height="5" rx="1" opacity=".1"/>
+        <rect x="672" y="90" width="4" height="5" rx="1" opacity=".12"/>
+        <rect x="672" y="110" width="4" height="5" rx="1" opacity=".18"/>
+        <rect x="724" y="60" width="4" height="5" rx="1" opacity=".2"/>
+        <rect x="724" y="80" width="4" height="5" rx="1" opacity=".15"/>
+        <rect x="724" y="100" width="4" height="5" rx="1" opacity=".1"/>
+        <rect x="732" y="70" width="4" height="5" rx="1" opacity=".18"/>
+        <rect x="732" y="90" width="4" height="5" rx="1" opacity=".12"/>
+        <rect x="804" y="60" width="4" height="5" rx="1" opacity=".22"/>
+        <rect x="804" y="80" width="4" height="5" rx="1" opacity=".15"/>
+        <rect x="804" y="100" width="4" height="5" rx="1" opacity=".1"/>
+        <rect x="812" y="70" width="4" height="5" rx="1" opacity=".18"/>
+        <rect x="812" y="90" width="4" height="5" rx="1" opacity=".12"/>
+        <rect x="504" y="120" width="4" height="5" rx="1" opacity=".15"/>
+        <rect x="504" y="140" width="4" height="5" rx="1" opacity=".1"/>
+        <rect x="864" y="80" width="4" height="5" rx="1" opacity=".15"/>
+        <rect x="864" y="100" width="4" height="5" rx="1" opacity=".1"/>
+        <rect x="624" y="120" width="4" height="5" rx="1" opacity=".15"/>
+        <rect x="624" y="140" width="4" height="5" rx="1" opacity=".1"/>
+      </g>
+
+      <!-- Tower top lights -->
+      <g fill="#C9A84C">
+        <circle cx="810" cy="28" r="2.5" opacity=".5"/>
+        <circle cx="810" cy="28" r="6" opacity=".1"/>
+        <circle cx="730" cy="28" r="2.5" opacity=".45"/>
+        <circle cx="730" cy="28" r="6" opacity=".08"/>
+        <circle cx="670" cy="48" r="2" opacity=".4"/>
+        <circle cx="670" cy="48" r="5" opacity=".08"/>
+      </g>
+
+      <!-- Upward trending chart line across the scene -->
+      <path d="M0 520 C120 500, 200 480, 300 440 S450 400, 550 350 S700 280, 800 250 S950 220, 1050 190 S1200 160, 1350 140 L1440 130"
+        stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".5"/>
+
+      <!-- Chart area fill -->
+      <path d="M0 520 C120 500, 200 480, 300 440 S450 400, 550 350 S700 280, 800 250 S950 220, 1050 190 S1200 160, 1350 140 L1440 130 L1440 700 L0 700 Z"
+        fill="url(#chartArea)"/>
+
+      <!-- Candlestick bars -->
+      <g opacity=".5">
+        <line x1="300" y1="420" x2="300" y2="460" stroke="#C9A84C" stroke-width="1.5"/>
+        <rect x="295" y="430" width="10" height="18" fill="#27AE60" opacity=".4" rx="1"/>
+        <line x1="550" y1="330" x2="550" y2="370" stroke="#C9A84C" stroke-width="1.5"/>
+        <rect x="545" y="338" width="10" height="20" fill="#27AE60" opacity=".4" rx="1"/>
+        <line x1="800" y1="230" x2="800" y2="275" stroke="#C9A84C" stroke-width="1.5"/>
+        <rect x="795" y="238" width="10" height="22" fill="#C9A84C" opacity=".3" rx="1"/>
+        <line x1="1050" y1="170" x2="1050" y2="215" stroke="#C9A84C" stroke-width="1.5"/>
+        <rect x="1045" y="178" width="10" height="22" fill="#27AE60" opacity=".4" rx="1"/>
+        <line x1="1300" y1="125" x2="1300" y2="165" stroke="#C9A84C" stroke-width="1.5"/>
+        <rect x="1295" y="130" width="10" height="22" fill="#27AE60" opacity=".45" rx="1"/>
+      </g>
+
+      <!-- Bright data points -->
+      <circle cx="550" cy="350" r="4" fill="#C9A84C" opacity=".7"/>
+      <circle cx="550" cy="350" r="10" fill="#C9A84C" opacity=".1"/>
+      <circle cx="800" cy="250" r="5" fill="#C9A84C" opacity=".8"/>
+      <circle cx="800" cy="250" r="12" fill="#C9A84C" opacity=".12"/>
+      <circle cx="1300" cy="140" r="4" fill="#C9A84C" opacity=".7"/>
+      <circle cx="1300" cy="140" r="10" fill="#C9A84C" opacity=".1"/>
+    </svg>
+  </div>
   <div class="container">
     <div class="hero__grid">
       <div class="hero__content fade-up">
@@ -613,7 +711,7 @@
     </div>
 
     <div class="footer__disclaimer">
-      <strong>Risk Disclaimer:</strong> Trading in foreign exchange, commodities, and CFDs carries a high level of risk and may not be suitable for all investors. Past performance is not indicative of future results. Before trading, please ensure you understand the risks involved and consider whether you can afford to lose your investment. Leverage amplifies both gains and losses. Meridian Group Markets is not liable for any direct or indirect losses arising from the use of this site or services. Please read our full risk disclaimer before trading.
+      <strong>Risk Warning:</strong> CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 74.6% of retail investor accounts lose money when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Past performance is not indicative of future results. Meridian Group Markets is not liable for any direct or indirect losses arising from the use of this site or services.
     </div>
   </div>
 </footer>
