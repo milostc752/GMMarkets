@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Global Markets - Forex & CFD Trading</title>
+  <meta name="description" content="Meridian Global Markets is a Dubai-based forex and CFD broker offering institutional-grade execution, tight spreads, and 300+ instruments. Backed by $12M in funding.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Risk Warning Banner -->
+<div class="risk-banner"><strong>Risk Warning:</strong> CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 74.6% of retail investor accounts lose money when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</div>
+
+<!-- ===== HEADER / NAVIGATION ===== -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__logo">
+        <span>Meridian</span> Global Markets
+      </div>
+
+      <div class="nav__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="platform.html">Platform</a>
+        <a href="trading.html">Trading</a>
+        <a href="regulation.html">Regulation</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav__cta">
+        <button class="btn btn--outline">Log In</button>
+        <button class="btn btn--primary">Open Account</button>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content fade-up">
+        <h1>Trade Global Markets with Confidence</h1>
+        <p>Access institutional-grade execution with tight spreads, advanced tools, and the backing of a well-funded brokerage built from the ground up.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary">
+            <span>→</span> Start Trading
+          </button>
+          <button class="btn btn--outline">Explore Platform</button>
+        </div>
+      </div>
+
+      <div class="hero__visual fade-up">
+        <div class="hero__chart">
+          <!-- SVG Chart Visualization -->
+          <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grid background -->
+            <defs>
+              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(201,168,76,0.06)" stroke-width="1"/>
+              </pattern>
+              <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:rgba(201,168,76,0.35)" />
+                <stop offset="100%" style="stop-color:rgba(201,168,76,0.03)" />
+              </linearGradient>
+            </defs>
+
+            <rect width="500" height="350" fill="url(#grid)"/>
+
+            <!-- Chart curve -->
+            <path d="M 20 200 Q 80 150, 120 140 T 220 110 T 320 120 T 420 80 T 480 100"
+                  fill="none" stroke="rgba(201,168,76,0.8)" stroke-width="3" stroke-linecap="round"/>
+
+            <!-- Area under curve -->
+            <path d="M 20 200 Q 80 150, 120 140 T 220 110 T 320 120 T 420 80 T 480 100 L 480 320 Q 400 330, 250 340 Q 100 335, 20 320 Z"
+                  fill="url(#chartGrad)"/>
+
+            <!-- Data points -->
+            <circle cx="120" cy="140" r="4" fill="rgba(201,168,76,1)"/>
+            <circle cx="220" cy="110" r="4" fill="rgba(201,168,76,1)"/>
+            <circle cx="320" cy="120" r="4" fill="rgba(201,168,76,1)"/>
+            <circle cx="420" cy="80" r="4" fill="rgba(201,168,76,1)"/>
+          </svg>
+        </div>
+
+        <!-- Floating stat cards -->
+        <div class="floating-stat" style="top: 20%; left: 10%;">
+          <div class="floating-stat__label">Avg Spread</div>
+          <div class="floating-stat__value cyan">0.1 pips</div>
+        </div>
+        <div class="floating-stat" style="top: 65%; right: 15%;">
+          <div class="floating-stat__label">Execution</div>
+          <div class="floating-stat__value green">14ms</div>
+        </div>
+        <div class="floating-stat" style="bottom: 10%; left: 20%;">
+          <div class="floating-stat__label">Instruments</div>
+          <div class="floating-stat__value cyan">300+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKER BAR ===== -->
+<section class="ticker">
+  <div class="ticker__inner">
+    <!-- First set of pairs -->
+    <div class="ticker__item">
+      <span class="pair">EUR/USD</span>
+      <span class="price">1.0847</span>
+      <span class="change up">+0.0023 (+0.21%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">GBP/USD</span>
+      <span class="price">1.2634</span>
+      <span class="change up">+0.0015 (+0.12%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">USD/JPY</span>
+      <span class="price">149.82</span>
+      <span class="change down">-0.18 (-0.12%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">AUD/USD</span>
+      <span class="price">0.6512</span>
+      <span class="change up">+0.0008 (+0.12%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">EUR/GBP</span>
+      <span class="price">0.8583</span>
+      <span class="change down">-0.0007 (-0.08%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">XAU/USD</span>
+      <span class="price">2341.50</span>
+      <span class="change up">+12.75 (+0.55%)</span>
+    </div>
+
+    <!-- Duplicate for seamless scroll -->
+    <div class="ticker__item">
+      <span class="pair">EUR/USD</span>
+      <span class="price">1.0847</span>
+      <span class="change up">+0.0023 (+0.21%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">GBP/USD</span>
+      <span class="price">1.2634</span>
+      <span class="change up">+0.0015 (+0.12%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">USD/JPY</span>
+      <span class="price">149.82</span>
+      <span class="change down">-0.18 (-0.12%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">AUD/USD</span>
+      <span class="price">0.6512</span>
+      <span class="change up">+0.0008 (+0.12%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">EUR/GBP</span>
+      <span class="price">0.8583</span>
+      <span class="change down">-0.0007 (-0.08%)</span>
+    </div>
+    <div class="ticker__item">
+      <span class="pair">XAU/USD</span>
+      <span class="price">2341.50</span>
+      <span class="change up">+12.75 (+0.55%)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-bar__grid">
+      <div class="stats-bar__item fade-up">
+        <h3>$<span data-count="12" data-suffix="M">0</span></h3>
+        <p>Backed & Funded</p>
+      </div>
+      <div class="stats-bar__item fade-up">
+        <h3><span data-count="300" data-suffix="+">0</span></h3>
+        <p>Instruments</p>
+      </div>
+      <div class="stats-bar__item fade-up">
+        <h3><span data-count="8" data-suffix="">0</span>+</h3>
+        <p>Liquidity Providers</p>
+      </div>
+      <div class="stats-bar__item fade-up">
+        <h3><span data-count="14" data-suffix="ms">0</span></h3>
+        <p>Avg Execution</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES SECTION ===== -->
+<section class="section section--dark" style="padding-bottom: 112px;">
+  <div class="container">
+    <div class="section__header text-center fade-up">
+      <span class="badge badge--accent">The Meridian Edge</span>
+      <h2>Why Choose Meridian?</h2>
+      <p>Programs and tools built to grow with you — whether you're trading your own capital or building a business around ours.</p>
+    </div>
+
+    <div class="edge-grid">
+      <div class="edge-item fade-up">
+        <div class="edge-item__number">01</div>
+        <div class="edge-item__content">
+          <h3>Introducing Brokers (IBs)</h3>
+          <p>Partner with Meridian and earn competitive commissions. Real-time tracking dashboard, multi-tier rebates, and a dedicated partnership manager to scale your network.</p>
+        </div>
+      </div>
+
+      <div class="edge-item fade-up">
+        <div class="edge-item__number">02</div>
+        <div class="edge-item__content">
+          <h3>Refer a Friend</h3>
+          <p>Invite your network — both you and your referral receive trading bonuses. No caps on referrals, no fine print. The more you share, the more you both earn.</p>
+        </div>
+      </div>
+
+      <div class="edge-item fade-up">
+        <div class="edge-item__number">03</div>
+        <div class="edge-item__content">
+          <h3>Trading Bonuses</h3>
+          <p>Welcome bonus, deposit match, and seasonal promotions. Up to 100% bonus on qualifying deposits to give your capital more room to work.</p>
+        </div>
+      </div>
+
+      <div class="edge-item fade-up">
+        <div class="edge-item__number">04</div>
+        <div class="edge-item__content">
+          <h3>Cashback Rewards</h3>
+          <p>Earn rebates on every lot you trade — credited directly to your account. Our loyalty program rewards consistency, not just volume.</p>
+        </div>
+      </div>
+
+      <div class="edge-item fade-up">
+        <div class="edge-item__number">05</div>
+        <div class="edge-item__content">
+          <h3>Lightning Execution</h3>
+          <p>14ms average execution with STP routing through 8+ tier-1 liquidity providers. No dealing desk, no requotes, no conflict of interest.</p>
+        </div>
+      </div>
+
+      <div class="edge-item fade-up">
+        <div class="edge-item__number">06</div>
+        <div class="edge-item__content">
+          <h3>Regulation First</h3>
+          <p>Licences pending in Mauritius and Dubai. Segregated funds, negative balance protection, and independent audits — built before launch, not after.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST / REGULATION SECTION ===== -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__header text-center fade-up">
+      <h2>Trusted by Traders Worldwide</h2>
+      <p>Your security and trust are our highest priorities. We adhere to the strictest international regulations and best practices.</p>
+    </div>
+
+    <div class="trust__grid">
+      <div class="trust-card fade-up">
+        <div class="trust-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h4>Licence Applications Filed</h4>
+        <p>Actively pursuing regulatory approval in Mauritius (FSC) and the UAE (DIFC). Compliance-first from day one.</p>
+      </div>
+
+      <div class="trust-card fade-up">
+        <div class="trust-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <h4>Segregated Funds</h4>
+        <p>Client funds are held in segregated accounts with Tier-1 banks, completely separate from our operational accounts.</p>
+      </div>
+
+      <div class="trust-card fade-up">
+        <div class="trust-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/><circle cx="12" cy="16" r="1"/></svg></div>
+        <h4>SSL Encryption</h4>
+        <p>AES-256 encryption protects all client data and transactions, with industry-standard security protocols across our entire infrastructure.</p>
+      </div>
+
+      <div class="trust-card fade-up">
+        <div class="trust-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>Negative Balance Protection</h4>
+        <p>Your liability is limited to your account balance. You will never owe money to Meridian.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PREMIUM FEATURES SHOWCASE ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header text-center fade-up">
+      <span class="badge badge--accent">Premium Suite</span>
+      <h2>Next-Generation Trading Features</h2>
+      <p>Everything you need to trade smarter, earn more, and stay ahead of the market — all in one platform.</p>
+    </div>
+
+    <!-- Prop Trading -->
+    <div class="showcase fade-up">
+      <div class="showcase__visual">
+        <svg class="showcase__svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="80" stroke="rgba(201,168,76,.15)" stroke-width="1"/>
+          <circle cx="100" cy="100" r="55" stroke="rgba(201,168,76,.1)" stroke-width="1"/>
+          <path d="M60 130 L80 95 L105 108 L130 65 L155 80" stroke="rgba(201,168,76,.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M60 130 L80 95 L105 108 L130 65 L155 80 L155 150 L60 150 Z" fill="url(#propGrad)" opacity=".3"/>
+          <circle cx="130" cy="65" r="6" fill="#C9A84C" opacity=".9"/>
+          <circle cx="130" cy="65" r="12" fill="#C9A84C" opacity=".15"/>
+          <path d="M90 50 L100 35 L110 50" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M95 45 L100 30 L105 45" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" fill="none" opacity=".5"/>
+          <defs><linearGradient id="propGrad" x1="100" y1="65" x2="100" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#C9A84C" stop-opacity=".4"/><stop offset="1" stop-color="#C9A84C" stop-opacity="0"/></linearGradient></defs>
+        </svg>
+        <div class="showcase__badge">Flagship Program</div>
+      </div>
+      <div class="showcase__content">
+        <h3>Proprietary Trading (Prop Trading)</h3>
+        <p>Trade with our capital, keep up to <strong>90% of the profits</strong>. Our funded trader program gives skilled traders access to accounts from $10,000 to $500,000 — no personal risk required.</p>
+        <div class="showcase__highlights">
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">$500K</span>
+            <span class="showcase__highlight-label">Max Funding</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">90%</span>
+            <span class="showcase__highlight-label">Profit Split</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">$0</span>
+            <span class="showcase__highlight-label">Personal Risk</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">24h</span>
+            <span class="showcase__highlight-label">Payouts</span>
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li>Multi-phase evaluation with achievable targets (8% Phase 1, 5% Phase 2)</li>
+          <li>Trade forex, indices, commodities, and crypto on funded accounts</li>
+          <li>No time limits — pass at your own pace with no pressure</li>
+          <li>Scale up to $2M with consistent performance</li>
+        </ul>
+        <button class="btn btn--primary" style="margin-top: 24px;">Get Funded →</button>
+      </div>
+    </div>
+
+    <!-- Copy Trading -->
+    <div class="showcase showcase--reverse fade-up">
+      <div class="showcase__visual">
+        <svg class="showcase__svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="70" r="18" stroke="#C9A84C" stroke-width="1.5" opacity=".8"/>
+          <circle cx="100" cy="70" r="8" fill="#C9A84C" opacity=".3"/>
+          <path d="M82 95 C82 85, 118 85, 118 95" stroke="#C9A84C" stroke-width="1.5" fill="none" opacity=".6"/>
+          <!-- Left follower -->
+          <circle cx="50" cy="120" r="12" stroke="#C9A84C" stroke-width="1" opacity=".4"/>
+          <circle cx="50" cy="120" r="5" fill="#C9A84C" opacity=".15"/>
+          <!-- Right follower -->
+          <circle cx="150" cy="120" r="12" stroke="#C9A84C" stroke-width="1" opacity=".4"/>
+          <circle cx="150" cy="120" r="5" fill="#C9A84C" opacity=".15"/>
+          <!-- Bottom follower -->
+          <circle cx="100" cy="160" r="12" stroke="#C9A84C" stroke-width="1" opacity=".4"/>
+          <circle cx="100" cy="160" r="5" fill="#C9A84C" opacity=".15"/>
+          <!-- Connection lines -->
+          <line x1="88" y1="82" x2="58" y2="112" stroke="#C9A84C" stroke-width="1" opacity=".25" stroke-dasharray="4 3"/>
+          <line x1="112" y1="82" x2="142" y2="112" stroke="#C9A84C" stroke-width="1" opacity=".25" stroke-dasharray="4 3"/>
+          <line x1="100" y1="88" x2="100" y2="148" stroke="#C9A84C" stroke-width="1" opacity=".25" stroke-dasharray="4 3"/>
+          <!-- Signal pulses -->
+          <circle cx="73" cy="97" r="3" fill="#C9A84C" opacity=".5"/>
+          <circle cx="127" cy="97" r="3" fill="#C9A84C" opacity=".5"/>
+          <circle cx="100" cy="125" r="3" fill="#C9A84C" opacity=".5"/>
+        </svg>
+        <div class="showcase__badge">Smart Automation</div>
+      </div>
+      <div class="showcase__content">
+        <h3>Copy Trading</h3>
+        <p>Automatically replicate the trades of top-performing strategy providers in real time. Choose from <strong>hundreds of verified traders</strong>, set your risk parameters, and let the platform do the rest.</p>
+        <div class="showcase__highlights">
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">500+</span>
+            <span class="showcase__highlight-label">Strategy Providers</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">Real-Time</span>
+            <span class="showcase__highlight-label">Execution</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">Full</span>
+            <span class="showcase__highlight-label">Risk Control</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">Free</span>
+            <span class="showcase__highlight-label">To Start</span>
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li>Transparent performance stats, drawdown metrics, and verified track records</li>
+          <li>Set max drawdown, lot multipliers, and stop-loss per provider</li>
+          <li>Disconnect or pause any time with one click</li>
+          <li>Earn as a signal provider — share your strategies and get paid</li>
+        </ul>
+        <button class="btn btn--primary" style="margin-top: 24px;">Explore Traders →</button>
+      </div>
+    </div>
+
+    <!-- Social Trading -->
+    <div class="showcase fade-up">
+      <div class="showcase__visual">
+        <svg class="showcase__svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Central hub -->
+          <circle cx="100" cy="100" r="70" stroke="rgba(201,168,76,.08)" stroke-width="1"/>
+          <circle cx="100" cy="100" r="45" stroke="rgba(201,168,76,.12)" stroke-width="1"/>
+          <!-- People nodes around the circle -->
+          <circle cx="100" cy="45" r="10" stroke="#C9A84C" stroke-width="1.5" opacity=".7"/>
+          <circle cx="148" cy="72" r="10" stroke="#C9A84C" stroke-width="1.5" opacity=".5"/>
+          <circle cx="148" cy="128" r="10" stroke="#C9A84C" stroke-width="1.5" opacity=".6"/>
+          <circle cx="100" cy="155" r="10" stroke="#C9A84C" stroke-width="1.5" opacity=".5"/>
+          <circle cx="52" cy="128" r="10" stroke="#C9A84C" stroke-width="1.5" opacity=".7"/>
+          <circle cx="52" cy="72" r="10" stroke="#C9A84C" stroke-width="1.5" opacity=".5"/>
+          <!-- Connection web -->
+          <line x1="100" y1="45" x2="148" y2="72" stroke="#C9A84C" stroke-width=".8" opacity=".2"/>
+          <line x1="148" y1="72" x2="148" y2="128" stroke="#C9A84C" stroke-width=".8" opacity=".2"/>
+          <line x1="148" y1="128" x2="100" y2="155" stroke="#C9A84C" stroke-width=".8" opacity=".2"/>
+          <line x1="100" y1="155" x2="52" y2="128" stroke="#C9A84C" stroke-width=".8" opacity=".2"/>
+          <line x1="52" y1="128" x2="52" y2="72" stroke="#C9A84C" stroke-width=".8" opacity=".2"/>
+          <line x1="52" y1="72" x2="100" y2="45" stroke="#C9A84C" stroke-width=".8" opacity=".2"/>
+          <!-- Cross connections -->
+          <line x1="100" y1="45" x2="100" y2="155" stroke="#C9A84C" stroke-width=".5" opacity=".1"/>
+          <line x1="52" y1="72" x2="148" y2="128" stroke="#C9A84C" stroke-width=".5" opacity=".1"/>
+          <line x1="148" y1="72" x2="52" y2="128" stroke="#C9A84C" stroke-width=".5" opacity=".1"/>
+          <!-- Inner node fills -->
+          <circle cx="100" cy="45" r="4" fill="#C9A84C" opacity=".3"/>
+          <circle cx="148" cy="72" r="4" fill="#C9A84C" opacity=".2"/>
+          <circle cx="148" cy="128" r="4" fill="#C9A84C" opacity=".25"/>
+          <circle cx="100" cy="155" r="4" fill="#C9A84C" opacity=".2"/>
+          <circle cx="52" cy="128" r="4" fill="#C9A84C" opacity=".3"/>
+          <circle cx="52" cy="72" r="4" fill="#C9A84C" opacity=".2"/>
+          <!-- Center glow -->
+          <circle cx="100" cy="100" r="14" fill="#C9A84C" opacity=".06"/>
+          <circle cx="100" cy="100" r="6" fill="#C9A84C" opacity=".15"/>
+        </svg>
+        <div class="showcase__badge">Community Driven</div>
+      </div>
+      <div class="showcase__content">
+        <h3>Social Trading Network</h3>
+        <p>Join a thriving community of 150,000+ traders. Share insights, discuss strategies, and follow top performers — all from within your trading platform.</p>
+        <div class="showcase__highlights">
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">150K+</span>
+            <span class="showcase__highlight-label">Active Traders</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">Live</span>
+            <span class="showcase__highlight-label">Trade Feed</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">Rankings</span>
+            <span class="showcase__highlight-label">Leaderboards</span>
+          </div>
+          <div class="showcase__highlight">
+            <span class="showcase__highlight-value">AI</span>
+            <span class="showcase__highlight-label">Sentiment</span>
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li>Live trade feed — see what the community is trading in real time</li>
+          <li>Trader leaderboards with monthly prizes and exclusive rewards</li>
+          <li>AI-powered market sentiment analysis aggregated from community positions</li>
+          <li>Private trading rooms, mentorship programs, and daily webinars</li>
+        </ul>
+        <button class="btn btn--primary" style="margin-top: 24px;">Join Community →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MORE FLASHY FEATURES GRID ===== -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__header text-center fade-up">
+      <h2>More Ways to Trade & Earn</h2>
+      <p>A complete ecosystem of tools, programs, and rewards designed to maximize your trading potential.</p>
+    </div>
+
+    <div class="features__grid">
+      <div class="feature-card fade-up" style="background: var(--bg-dark); border-color: rgba(201,168,76,.15); color: var(--white);">
+        <div class="feature-card__icon" style="background: rgba(201,168,76,.08);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M7 10l3-3 2 2 5-5"/>
+          </svg>
+        </div>
+        <h3 style="color: var(--white);">Algo Trading & EAs</h3>
+        <p style="color: rgba(255,255,255,.6);">Deploy automated trading strategies and Expert Advisors. Full MT5 algorithmic trading support with ultra-low latency VPS hosting included on Pro accounts.</p>
+      </div>
+
+      <div class="feature-card fade-up" style="background: var(--bg-dark); border-color: rgba(201,168,76,.15); color: var(--white);">
+        <div class="feature-card__icon" style="background: rgba(201,168,76,.08);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/><path d="M5 20v-1a7 7 0 0114 0v1"/><path d="M17 8h4m-2-2v4"/>
+          </svg>
+        </div>
+        <h3 style="color: var(--white);">PAMM / MAM Accounts</h3>
+        <p style="color: rgba(255,255,255,.6);">Manage multiple client accounts from a single master account. Flexible allocation methods — by equity, balance, or lot. Perfect for money managers and fund operators.</p>
+      </div>
+
+      <div class="feature-card fade-up" style="background: var(--bg-dark); border-color: rgba(201,168,76,.15); color: var(--white);">
+        <div class="feature-card__icon" style="background: rgba(201,168,76,.08);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3 style="color: var(--white);">Trading Signals</h3>
+        <p style="color: rgba(255,255,255,.6);">Receive institutional-grade signals powered by AI and our in-house analyst team. Technical and fundamental setups delivered directly to your platform and Telegram.</p>
+      </div>
+
+      <div class="feature-card fade-up" style="background: var(--bg-dark); border-color: rgba(201,168,76,.15); color: var(--white);">
+        <div class="feature-card__icon" style="background: rgba(201,168,76,.08);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+          </svg>
+        </div>
+        <h3 style="color: var(--white);">Trading Academy</h3>
+        <p style="color: rgba(255,255,255,.6);">From beginner to expert — 200+ video courses, interactive quizzes, live mentoring sessions, and a personal learning path tailored by AI to your skill level.</p>
+      </div>
+
+      <div class="feature-card fade-up" style="background: var(--bg-dark); border-color: rgba(201,168,76,.15); color: var(--white);">
+        <div class="feature-card__icon" style="background: rgba(201,168,76,.08);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3 style="color: var(--white);">Trading Competitions</h3>
+        <p style="color: rgba(255,255,255,.6);">Compete against traders worldwide in monthly contests. Prize pools up to $100,000, real-time leaderboards, and exclusive rewards for top performers.</p>
+      </div>
+
+      <div class="feature-card fade-up" style="background: var(--bg-dark); border-color: rgba(201,168,76,.15); color: var(--white);">
+        <div class="feature-card__icon" style="background: rgba(201,168,76,.08);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+          </svg>
+        </div>
+        <h3 style="color: var(--white);">Meridian Card</h3>
+        <p style="color: rgba(255,255,255,.6);">Withdraw profits instantly to your Meridian Visa card. Use your trading earnings anywhere in the world — ATMs, online purchases, and contactless payments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="fade-up">Ready to Start Trading?</h2>
+    <p class="fade-up">Join the traders who got in early. Open your account in minutes and experience what a modern broker should feel like.</p>
+    <div class="fade-up">
+      <button class="btn btn--white">Open Your Account</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div style="font-size: 18px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; font-family: 'Playfair Display', serif;">
+          <span style="color: var(--accent);">Meridian</span> Global Markets
+        </div>
+        <p>Leading global forex and CFD broker providing institutional-grade trading from the heart of Dubai to clients worldwide.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="platform.html">Platform</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Trading</h4>
+        <a href="trading.html">Trading Conditions</a>
+        <a href="trading.html">Account Types</a>
+        <a href="platform.html">Platforms</a>
+        <a href="regulation.html">Regulation</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Risk Disclaimer</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 Meridian Global Markets. All rights reserved.</span>
+      <div>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+
+    <div class="footer__disclaimer">
+      <strong>Risk Disclaimer:</strong> Trading in foreign exchange, commodities, and CFDs carries a high level of risk and may not be suitable for all investors. Past performance is not indicative of future results. Before trading, please ensure you understand the risks involved and consider whether you can afford to lose your investment. Leverage amplifies both gains and losses. Meridian Global Markets is not liable for any direct or indirect losses arising from the use of this site or services. Please read our full risk disclaimer before trading.
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent -->
+<div class="cookie-banner">
+  <p>We use cookies to enhance your browsing experience and analyse site traffic. By clicking "Accept", you consent to our use of cookies. Read our <a href="#">Cookie Policy</a> for more information.</p>
+  <div class="cookie-banner__actions">
+    <button class="cookie-banner__btn cookie-banner__btn--accept">Accept</button>
+    <button class="cookie-banner__btn cookie-banner__btn--decline">Decline</button>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
