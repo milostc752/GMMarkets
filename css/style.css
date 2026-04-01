@@ -87,6 +87,35 @@ ul { list-style: none; }
 .btn--white { background: var(--white); color: var(--primary); }
 .btn--white:hover { background: #f0f0f0; transform: translateY(-2px); }
 
+/* Coming Soon indicator on non-functional buttons */
+.btn--soon { position: relative; cursor: default; }
+.btn--soon::after {
+  content: '🕐';
+  font-size: 11px;
+  margin-left: 6px;
+  vertical-align: middle;
+  opacity: .8;
+}
+.btn--soon:hover::before {
+  content: 'Coming Soon';
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  border: 1px solid rgba(201,168,76,.3);
+  pointer-events: none;
+  z-index: 100;
+}
+
 .badge {
   display: inline-block;
   padding: 6px 16px;
