@@ -370,7 +370,7 @@ ul { list-style: none; }
 }
 
 /* ---------- Section Headers ---------- */
-.section__header { margin-bottom: 56px; }
+.section__header { margin-bottom: 56px; text-align: center; }
 .section__header h2 {
   font-size: clamp(28px, 4vw, 40px);
   font-family: 'Cinzel', serif;
@@ -383,8 +383,8 @@ ul { list-style: none; }
   font-size: 17px;
   color: var(--text-light);
   max-width: 640px;
+  margin: 0 auto;
 }
-.section__header.text-center p { margin: 0 auto; }
 .section--dark .section__header p { color: rgba(255,255,255,.6); }
 
 /* ---------- Trust / Regulation ---------- */
